@@ -244,12 +244,12 @@ function buildNote(word) {
 
 function getAudioPath(word) {
   if (word.gender === "man") {
-    return `audio/${word.audioIndex}-man.mp3`;
+    return `audio/${word.audioIndex}.m4a`;
   }
   if (word.gender === "woman") {
-    return `audio/${word.audioIndex}-woman.mp3`;
+    return `audio/${word.audioIndex}.m4a`;
   }
-  return `audio/${word.audioIndex}.mp3`;
+  return `audio/${word.audioIndex}.m4a`;
 }
 
 function buildEditorField(labelText, value, onChange, type = "text") {
