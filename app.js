@@ -159,7 +159,7 @@ function highlightSelection(gender, buttons, selectedLabel) {
   buttons.forEach((button) => {
     button.classList.toggle("active", button.dataset.gender === gender);
   });
-  selectedLabel.textContent = `Saved as: ${gender}`;
+  //selectedLabel.textContent = `Saved as: ${gender}`;
 }
 
 function enableActions(actions) {
