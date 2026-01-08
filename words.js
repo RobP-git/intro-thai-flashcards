@@ -127,14 +127,14 @@ const WORD_SETS = [
   },
   {
     english: "No thanks",
-    thai: "mâi àow cúp",
+    thai: "mâi aow cúp",
     audioIndex: 19,
     gender: "man",
     note: "If someone asks you if you want to eat or drink something",
   },
   {
     english: "No thanks",
-    thai: "mâi àow káa",
+    thai: "mâi aow káa",
     audioIndex: 20,
     gender: "woman",
     note: "If someone asks you if you want to eat or drink something",
