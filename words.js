@@ -155,13 +155,13 @@ const WORD_SETS = [
   },
   {
     english: "Be healed in Jesus name",
-    thai: "??",
+    thai: "jong hǐi nai phrá naam phrá yay-suu",
     audioIndex: 23,
     gender: "man",
     note: "",
   },
   {
-    english: "Be healed in Jesus name",
+    english: "jong hǐi nai phrá naam phrá yay-suu",
     thai: "??",
     audioIndex: 24,
     gender: "woman",
