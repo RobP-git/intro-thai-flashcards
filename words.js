@@ -32,14 +32,14 @@ const WORD_SETS = [
     thai: "khun chûu a-rai cúp?",
     audioIndex: 5,
     gender: "man",
-    note: "uu is made by tighting the throat. Like 'ew', that's disgusting!",
+    note: "uu is made by tighting the throat. Like 'ew, that's disgusting!'",
   },
   {
     english: "What is your name?",
     thai: "khun chûu a-rai kâa?",
     audioIndex: 6,
     gender: "woman",
-    note: "uu is made by tighting the throat. Like 'ew', that's disgusting!",
+    note: "uu is made by tighting the throat. Like 'ew, that's disgusting!'",
   },
   {
     english: "My name is...",
