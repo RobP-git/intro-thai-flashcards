@@ -153,6 +153,12 @@ body {
   color: #2f4b42;
 }
 
+.note {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #6a5f53;
+}
+
 .hidden {
   visibility: hidden;
 }
