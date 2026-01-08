@@ -9,16 +9,17 @@
   <body data-page="home">
     <main class="page">
       <header class="hero">
+        <div class="flag" aria-hidden="true">🇹🇭</div>
         <p class="eyebrow">Quick Thai practice</p>
         <h1>Introduction Thai</h1>
         <p class="lead">
-          Pick how you want phrases tailored, then jump into overview or practice mode.
+          Choose your voice, then start learning.
         </p>
       </header>
 
       <section class="card">
         <h2>Who are you learning as?</h2>
-        <p class="muted">Your choice saves to this browser and is used on all pages.</p>
+        <p class="muted">Saved to this device for all pages.</p>
         <div class="toggle-group" role="group" aria-label="Select your gendered voice">
           <button class="toggle" data-gender="man" type="button">Man</button>
           <button class="toggle" data-gender="woman" type="button">Woman</button>
@@ -27,8 +28,16 @@
       </section>
 
       <section class="actions">
-        <a class="action" href="overview.html">Word overview</a>
-        <a class="action primary" href="learn.html">Learn</a>
+        <a class="action disabled" href="#" data-href="overview.html" aria-disabled="true"
+          >Word overview</a
+        >
+        <a
+          class="action primary disabled"
+          href="#"
+          data-href="learn.html"
+          aria-disabled="true"
+          >Learn</a
+        >
       </section>
     </main>
     <script src="words.js"></script>

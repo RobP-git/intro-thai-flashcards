@@ -15,10 +15,12 @@ if (currentPage && pages[currentPage]) {
 function initHome() {
   const buttons = document.querySelectorAll(".toggle");
   const selected = document.getElementById("selected-gender");
+  const actions = document.querySelectorAll(".actions .action");
   const saved = getSavedGender();
 
   if (saved) {
     highlightSelection(saved, buttons, selected);
+    enableActions(actions);
   }
 
   buttons.forEach((button) => {
@@ -26,6 +28,7 @@ function initHome() {
       const gender = button.dataset.gender;
       localStorage.setItem(STORAGE_KEY, gender);
       highlightSelection(gender, buttons, selected);
+      enableActions(actions);
     });
   });
 }
@@ -157,6 +160,17 @@ function highlightSelection(gender, buttons, selectedLabel) {
     button.classList.toggle("active", button.dataset.gender === gender);
   });
   selectedLabel.textContent = `Saved as: ${gender}`;
+}
+
+function enableActions(actions) {
+  actions.forEach((action) => {
+    const link = action.dataset.href;
+    if (link) {
+      action.href = link;
+    }
+    action.classList.remove("disabled");
+    action.removeAttribute("aria-disabled");
+  });
 }
 
 function getSavedGender() {

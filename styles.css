@@ -21,6 +21,19 @@ body {
   gap: 24px;
 }
 
+.hero {
+  text-align: center;
+  padding: 20px 18px;
+  background: linear-gradient(135deg, #f6f0e7, #fff6ef);
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(33, 24, 16, 0.08);
+}
+
+.flag {
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+
 .hero h1,
 .page-header h1 {
   margin: 0 0 8px;
@@ -69,6 +82,13 @@ body {
 .action.primary {
   background: #2f4b42;
   color: #fff8f0;
+}
+
+.action.disabled {
+  background: #efe6da;
+  color: #9b8c7b;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .page-header {
@@ -205,9 +225,5 @@ body {
 
   .page > * {
     width: min(640px, 100%);
-  }
-
-  .actions {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
