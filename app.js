@@ -85,11 +85,13 @@ function initLearn() {
     });
 
     const audio = buildAudioButton(word);
+    const note = buildNote(word);
 
     card.appendChild(english);
     card.appendChild(thai);
     card.appendChild(reveal);
     card.appendChild(audio);
+    card.appendChild(note);
     list.appendChild(card);
   });
 }
@@ -124,6 +126,10 @@ function initEdit() {
         word.gender = value;
       }));
 
+      wrapper.appendChild(buildEditorField("Note", word.note ?? "", (value) => {
+        word.note = value;
+      }));
+
       const remove = document.createElement("button");
       remove.type = "button";
       remove.className = "remove";
@@ -144,6 +150,7 @@ function initEdit() {
       thai: "ใหม่",
       audioIndex: 0,
       gender: "all",
+      note: "",
     });
     render();
   });
@@ -200,10 +207,12 @@ function buildWordContent(word) {
   thai.textContent = word.thai;
 
   const audio = buildAudioButton(word);
+  const note = buildNote(word);
 
   container.appendChild(english);
   container.appendChild(thai);
   container.appendChild(audio);
+  container.appendChild(note);
 
   return container;
 }
@@ -224,6 +233,13 @@ function buildAudioButton(word) {
   });
 
   return button;
+}
+
+function buildNote(word) {
+  const note = document.createElement("p");
+  note.className = "note";
+  note.textContent = word.note || "";
+  return note;
 }
 
 function getAudioPath(word) {
