@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Introduction Thai</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <main class="page">
+      <header class="hero">
+        <div class="flag" aria-hidden="true">🇹🇭</div>
+        <p class="eyebrow">Quick Thai practice</p>
+        <h1>Introduction Thai</h1>
+        <p class="lead">
+          
+        </p>
+      </header>
+
+      <section class="card">
+        <h2>Your gender?</h2>
+        <p class="muted">Select your gender. Thai pronouns and particles are based off the gender of the one speaking.</p>
+        <div class="toggle-group" role="group" aria-label="Select your gender. Thai pronouns and particles are based off the gender of the one speaking.">
+          <button class="toggle" data-gender="man" type="button">Man</button>
+          <button class="toggle" data-gender="woman" type="button">Woman</button>
+        </div>
+        <p class="selected" id="selected-gender">Not set yet</p>
+      </section>
+
+      <section class="actions">
+        <a class="action disabled" href="#" data-href="overview.html" aria-disabled="true"
+          >Word overview</a
+        >
+        <a
+          class="action primary disabled"
+          href="#"
+          data-href="learn.html"
+          aria-disabled="true"
+          >Learn</a
+        >
+      </section>
+    </main>
+    <script src="words.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

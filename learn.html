@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learn · Introduction Thai</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="learn">
+    <main class="page">
+      <header class="page-header">
+        <a class="back" href="index.html">← Home</a>
+        <div>
+          <h1>Learn</h1>
+          <p class="muted">Tap the card to reveal Thai, then play the audio.</p>
+        </div>
+      </header>
+      <section class="notice" id="gender-notice" hidden>
+        <strong>Heads up:</strong> choose Man or Woman on the home page to filter phrases.
+      </section>
+      <section class="list" id="learn-list" aria-live="polite"></section>
+    </main>
+    <script src="words.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

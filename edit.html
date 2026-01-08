@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Edit words · Introduction Thai</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="edit">
+    <main class="page">
+      <header class="page-header">
+        <a class="back" href="index.html">← Home</a>
+        <div>
+          <h1>Edit words</h1>
+          <p class="muted">
+            This page is intentionally unlinked. Use it to update word sets and audio
+            indexes, then copy the JSON back into <code>words.js</code>.
+          </p>
+        </div>
+      </header>
+      <section class="editor">
+        <div class="editor-actions">
+          <button class="action" id="add-word" type="button">Add word</button>
+          <button class="action primary" id="export-json" type="button">Export JSON</button>
+        </div>
+        <div id="editor-list"></div>
+        <label class="field">
+          <span>JSON output</span>
+          <textarea id="json-output" rows="10" readonly></textarea>
+        </label>
+        <p class="muted">
+          Audio files should live in <code>audio/</code>. Use the audio index (number)
+          to connect to files like <code>audio/1.mp3</code> or gendered files like
+          <code>audio/1-man.mp3</code> and <code>audio/1-woman.mp3</code>.
+        </p>
+      </section>
+    </main>
+    <script src="words.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
