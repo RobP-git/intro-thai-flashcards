@@ -8,7 +8,7 @@ const WORD_SETS = [
   },
   {
     english: "Hello",
-    thai: "sa-wadt dee káa",
+    thai: "sa-wadt dee kâa",
     audioIndex: 2,
     gender: "woman",
     note: "",
@@ -64,7 +64,7 @@ const WORD_SETS = [
   },
   {
     english: "Thank you",
-    thai: "cop khun káa",
+    thai: "cop khun kâa",
     audioIndex: 10,
     gender: "woman",
     note: "",
@@ -78,7 +78,7 @@ const WORD_SETS = [
   },
   {
     english: "You're welcome",
-    thai: "yin dee káa",
+    thai: "yin dee kâa",
     audioIndex: 12,
     gender: "woman",
     note: "",
@@ -92,7 +92,7 @@ const WORD_SETS = [
   },
   {
     english: "Yes I want",
-    thai: "aow káa",
+    thai: "aow kâa",
     audioIndex: 18,
     gender: "woman",
     note: "If someone asks you if you want to eat or drink something",
@@ -106,7 +106,7 @@ const WORD_SETS = [
   },
   {
     english: "No thanks",
-    thai: "mâi aow káa",
+    thai: "mâi aow kâa",
     audioIndex: 20,
     gender: "woman",
     note: "If someone asks you if you want to eat or drink something",
@@ -162,7 +162,7 @@ const WORD_SETS = [
   },
   {
     english: "God bless you",
-    thai: "phrá jâo ow-way pǒn káa",
+    thai: "phrá jâo ow-way pǒn kâa",
     audioIndex: 28,
     gender: "woman",
     note: "",
