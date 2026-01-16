@@ -227,7 +227,29 @@ function buildAudioButton(word) {
   const audio = new Audio(audioPath);
   audio.preload = "none";
 
+  const setButtonLabel = (label) => {
+    button.textContent = label;
+  };
+
+  audio.addEventListener("play", () => {
+    setButtonLabel("Pause audio");
+  });
+
+  audio.addEventListener("pause", () => {
+    if (!audio.ended) {
+      setButtonLabel("Restart audio");
+    }
+  });
+
+  audio.addEventListener("ended", () => {
+    setButtonLabel("Restart audio");
+  });
+
   button.addEventListener("click", () => {
+    if (!audio.paused && !audio.ended) {
+      audio.pause();
+      return;
+    }
     audio.currentTime = 0;
     audio.play();
   });
